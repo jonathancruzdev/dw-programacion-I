@@ -34,3 +34,6 @@ function CalcularImpuesto(precio=null, impuesto=21 ){
     return `El Precio es ${precio}, el iva es ${iva}. El Precio Final es ${final}`;
 }
 
+console.log( CalcularImpuesto('texto') );
+console.log( CalcularImpuesto(2000) );
+console.log( CalcularImpuesto(2000, 35) );
