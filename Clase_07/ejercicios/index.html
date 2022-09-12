@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 07 - Funciones III</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Funciones - Ejercicio 01</h1>
+    <p>Hay un botón que dice "Mostrar días de cursada" que al hacerle click ejecuta a la función <strong>MostrarDias</strong>:</p>
+    <ul>
+        <li>Solicita y valida las siglas de una carrera (dw, dm, dg).</li>
+        <li>Envía el dato como argumento a la función ObtenerDias, que devolverá un valor.</li>
+        <li>El valor devuelvo debe ser informado al usuario en el html.</li>
+    </ul>
+    <p>Por su parte, la función <strong>ObtenerDias:</strong></p>
+    <ul>
+        <li>Tiene un parámetro preparado para recibir una sigla.</li>
+        <li>Analizará y devolverá los días de cursada:<br />&bull; DW: Ma, Ju, Vi<br />&bull; DM: Lu, Mi, Vi<br />&bull; DG: Mi, Ju, Vi</li>
+    </ul>
+    <button onclick="MostrarDias();">Mostrar días de cursada</button>
+    <p id="mensaje"></p>
+    <script src="script.js"></script>
+</body>
+</html>
