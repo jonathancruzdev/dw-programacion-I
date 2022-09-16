@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 07 - Funciones III</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Funciones - Ejercicio 2</h1>
+
+    <p>Tenemos una especie de "calculadora", con 7 botones:</p>
+    <ul>
+        <li>Tenemos 2 botones para ingresar valores numéricos.</li>
+        <li>Tenemos 4 botones para realizar una operación aritmética.</li>
+        <li>Tenemos un botón que muestra el resultado.</li>
+    </ul>
+    <p>Ya tienen una función asignada a su onclick:</p>
+    <ul>
+        <li>ObtenerNumero1</li>
+        <li>ObtenerNumero2</li>
+        <li>Operacion</li>
+        <li>Mostrar</li>
+    </ul>
+    <p>El funcionamiento debe ser el siguiente:</p>
+    <ul>
+        <li>Ingresar dos valores.</li>
+        <li>Seleccionar una operación.</li>
+        <li>Mostrar el resultado.</li>
+    </ul>
+    <p>Se debe verificar que los datos sean válidos (en caso contrario notificarlo).</p>
+    <p>Se deben utilizar variables globales.</p>
+    <p><strong>Extra:</strong> crear una función para ingresar y validar un número.</p>
+    <div>
+        <button onclick="ObtenerNumero1();">Ingresar valor 1</button>
+        <button onclick="ObtenerNumero2();">Ingresar valor 2</button>
+    </div>
+    <div>
+        <button onclick="Operacion('sumar');">+</button>
+        <button onclick="Operacion('restar');">-</button>
+        <button onclick="Operacion('multiplicar');">*</button>
+        <button onclick="Operacion('dividir');">/</button>
+    </div>
+    <button onclick="Mostrar();">Mostrar resultado</button>
+    <ul id="salida"></ul>
+    <script src="script.js"></script>
+</body>
+
+</html>
