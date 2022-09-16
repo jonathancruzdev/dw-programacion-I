@@ -18,3 +18,6 @@ const Mostrar = () => {
     console.log(colores);
     console.table(colores);
 }
+
+
+let listaCosas = [10, 'texto', false, [3,5,10]];
