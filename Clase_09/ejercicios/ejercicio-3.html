@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Arrays I - Ejercicio 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Arrays I - Ejercicio 3</h1>
+        </header>
+        <main>
+            <h2>Discografía de "Patricio Rey y sus redonditos de ricota"</h2>
+            <p>Ahora la información de los discos se repartirá entre 3 arrays:</p>
+            <ul>
+                <li>aImagenes: contiene el nombre de las imágenes.</li>
+                <li>aNombres: contiene los nombres de los discos.</li>
+                <li>aLanzamientos: contiene el año de lanzamiento.</li>
+            </ul>
+            <p>Con un ciclo de repetición for, se deberá generar por cada índice:</p>
+            <ul>
+                <li>Una etiqueta div, que contendrá una etiqueta a cuyo href sea la ruta del archivo.</li>
+                <li>Dentro de la etiqueta a, crear una etiqueta img cuyo src sea el nombre del archivo (ver la ruta a colocar en el src) y el alt el nombre del disco.</li>
+                <li>Luego de la etiqueta a, colocar una etiqueta h3 que muestre el nombre del disco.</li>
+                <li>Luego de la etiqueta h3, colocar una etiqueta p que muestre el año de lanzamiento del disco.</li>
+                <li>Cada bloque debe irse guardando en la variable html.</li>
+            </ul>
+            <p>El contenido de html será mostrado dentro del div.galeria.</p>
+            <p>Se entiende que los arrays tienen relación por medio de sus índices:</p>
+            <ul>
+                <li>Imagen 0, Nombre 0, Año 0</li>
+                <li>Imagen 1, Nombre 1, Año 1</li>
+                <li>Imagen 2, Nombre 2, Año 2</li>
+                <li>Y así ...</li>
+            </ul>
+            <hr />
+            <!--
+            Estructura a generar por cada índice del array:
+            <div>
+                <a href="ruta/IMAGEN" target="_blank">
+                    <img src="ruta/IMAGEN" alt="NOMBRE" />
+                </a>
+                <h3>NOMBRE</h3>
+                <p>AÑO</p>
+            </div>
+            -->
+        <div class="galeria"></div>
+    </main>
+    <script src="ejercicio-3.js"></script>
+</body>
+</html>
