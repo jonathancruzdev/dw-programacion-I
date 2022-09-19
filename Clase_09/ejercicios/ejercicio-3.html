@@ -5,6 +5,32 @@
         <title>Arrays I - Ejercicio 3</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
         <link rel="stylesheet" href="../style.css" />
+        <style>
+            .galeria {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: space-evenly;
+            }
+
+            .galeria div {
+                width: 200px;
+                border: 1px solid black;
+                padding: 10px;
+                background-color: blanchedalmond;
+                border-radius: 4px;
+                color: black;
+                transition: all 0.75s;
+            }
+            .galeria div:hover {
+                transform: scale(1.1);
+            }
+
+            .galeria div img {
+                width: 100%;
+                border-radius: 4px;
+            }
+        </style>
     </head>
     <body>
         <header>

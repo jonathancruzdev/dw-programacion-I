@@ -39,3 +39,14 @@ let lanzamientos = [
 ];
 
 // Recorrida del array:
+for (let i = 0; i < imagenes.length; i++) {
+    let div = `<div>
+                    <a href="img/${imagenes[i]}" target="_blank">
+                        <img src="img/${imagenes[i]}" alt="NOMBRE" />
+                    </a>
+                    <h3>NOMBRE</h3>
+                    <p>AÑO</p>
+                </div>`;
+    document.querySelector('.galeria').innerHTML += div;
+    
+}
