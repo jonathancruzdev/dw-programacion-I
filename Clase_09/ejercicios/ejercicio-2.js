@@ -1,5 +1,4 @@
 // Variables:
-let html = '';
 let discos = [
     'los-redondos-1985-gulp!.jpg',
     'los-redondos-1986-oktubre.jpg',
@@ -16,8 +15,8 @@ let discos = [
 // Recorrida del array:
 for(let i=0; i < discos.length; i++){
     let div = `<div>
-                    <img src="ruta/VALOR" alt="VALOR" />
-                    <p>VALOR</p>
+                    <img src="img/${discos[i]}" alt="${discos[i]}" />
+                    <p>${discos[i]}</p>
                 </div>`;
     document.querySelector('.galeria').innerHTML += div;
 }
