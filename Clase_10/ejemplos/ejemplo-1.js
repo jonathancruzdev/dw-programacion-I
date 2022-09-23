@@ -36,3 +36,14 @@ const MostrarCoordenadas = () => {
     } while (!(c >= 0 && c <= 7))
     console.log(tablero[f][c]);
 }
+
+
+let multi = [
+    ['a', 'b', 'c'],
+    [1,2,3],
+    ['d', 'e', 'f']
+]
+
+console.log(  multi[0][0]  );
+console.log(  multi[2][1]  );
+

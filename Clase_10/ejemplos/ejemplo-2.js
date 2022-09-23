@@ -6,6 +6,22 @@ let sodaStereo = [
     ['Nano', 'Dominguez', 'Saxo', 'enojo.jpg', 'Celeste'],
 ];
 
+
+
+for(let i=0; i< sodaStereo.length; i++  ){
+    //console.info( sodaStereo[i] );
+    console.log('i',i);
+    for( let j=0; j< sodaStereo[i].length; j++  ){
+        console.log( sodaStereo[i][j] );
+    }
+
+}
+
+
+
+
+
+
 // Función para mostrar la info recorrida:
 // for (let musico of sodaStereo) {
 //     // console.table(musico);

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 10 - Arrays Multidimensionales</title>
     <link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
     <header>
-        <h1> Arrays II - Ejemplo 2</h1>
+        <h1>Arrays II - Ejemplo 3</h1>
     </header>
     <main>
         <h2>Soda Stereo</h2>
@@ -19,11 +20,17 @@
         <p>Utilizaremos la variable i para recorrer el primer nivel (cada músico).</p>
         <p>Utilizaremos la variable j para recorrer el segundo nivel (cada dato del músico).</p>
         <p>Recordemos que para ver el dato de cada músico, necesito la coordenada (músico-dato), es decir [i][j].</p>
+        <p>Sabemos que en el segundo nivel tenemos la siguiente estructura:</p>
+        <ul>
+            <li><strong>0:</strong> Nombre</li>
+            <li><strong>1:</strong> Apellido</li>
+            <li><strong>2:</strong> Instrumento</li>
+            <li><strong>3:</strong> Archivo</li>
+        </ul>
+        <p>Con un condicional podemos ver si la posición es la 3, para que en vez de texto solamente, utilicemos una etiqueta img.</p>
         <button onclick="MostrarInfo();">Mostrar información</button>
         <div id="info"></div>
+        <script src="ejemplo-3.js"></script>
     </main>
-    <footer>
-    </footer>
-    <script src="ejemplo-2.js"></script>
 </body>
 </html>
