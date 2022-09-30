@@ -48,6 +48,8 @@ function CargarAlumno(){
 // Recorre los array y renderizar en el HTML los datos
 function MostrarDatos(){
     let html = '';
+    let contador = 0;
+    let acumulador = 0;
     
     // Recorro el array Global
     for(alumno of alumnos){
@@ -58,6 +60,8 @@ function MostrarDatos(){
                     <p>Notas</p>
                     <ul>`
             for(nota of alumno['notas'] ){
+                acumulador += nota
+                contador++;
                 //html += `<li style="color:  ${ nota < 4 ? 'red' : 'green'  } ">Notas: ${nota}</li>`;
 
 
@@ -70,10 +74,12 @@ function MostrarDatos(){
 
             }
         
-            html +=  ` <li>promedio: 5</li>
+            html +=  ` <li>promedio: ${acumulador / contador}</li>
                     </ul>
                 </div>`
 
+            contador = 0;
+            acumulador = 0;
     }
 
 
