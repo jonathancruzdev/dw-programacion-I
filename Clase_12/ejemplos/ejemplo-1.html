@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 01</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="ejemplo-1.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Objetos I - Ejemplo 01</h1>
+    </header>
+    <main>
+        <h2>Operador typeof</h2>
+        <p>Veamos con ejemplos como funciona el typeof:</p>
+        <ul>
+            <script>
+            TipoDeDato(0, 'number');
+            TipoDeDato('Hola' * 2, 'number');
+            TipoDeDato(1/0, 'number');
+            TipoDeDato(1, 'number');
+            TipoDeDato('', 'string');
+            TipoDeDato(' ', 'string');
+            TipoDeDato('0', 'string');
+            TipoDeDato('1', 'string');
+            TipoDeDato('Cadena', 'string');
+            TipoDeDato(undefined);
+            TipoDeDato(true);
+            TipoDeDato(false);
+            TipoDeDato(null);
+            TipoDeDato(() => {}, 'function');
+            TipoDeDato([], 'array');
+            TipoDeDato({}, 'object');
+            </script>
+        </ul>
+    </main>
+</body>
+</html>
